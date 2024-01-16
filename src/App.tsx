@@ -1,11 +1,9 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import GameGrid from "./components/GameGrid";
+import GenreList from "./components/GenreList";
 
 function App() {
-  console.log(import.meta.env.API_URL);
-  console.log(import.meta.env.API_KEY, "test");
-
   return (
     <Grid
       templateAreas={{
@@ -17,7 +15,7 @@ function App() {
         <Navbar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside">Aside</GridItem>
+        <GenreList />
       </Show>
       <GridItem area="main">
         <GameGrid />
