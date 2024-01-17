@@ -3,7 +3,7 @@ import { Game } from "../hooks/useGames";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImgUrl from "../services/image-url";
-
+import ImagePlaceholder from "../assets/no-image-placeholder-6f3882e0.webp";
 interface Props {
   game: Game;
 }
