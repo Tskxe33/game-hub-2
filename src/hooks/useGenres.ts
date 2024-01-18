@@ -17,7 +17,7 @@ const useGenres = () =>
       apiClient
         .get<FetchResponse<Genre>>("/genres")
         .then((res) => res.data.results),
-    staleTime: 24 * 60 * 60 * 1000,
+    staleTime: 24 * 60 * 60 * 1000, //24h
   });
 
 export default useGenres;
